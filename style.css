@@ -1,0 +1,50 @@
+body {
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+button {
+    background-color: rgb(36, 36, 223);
+    width: 20%;
+    height: 40px;
+    border-radius: 10px 10px;
+    color: white;
+}
+
+input {
+    width: 60%;
+    height: 30px;
+    box-shadow: 1px 1px 1px 1px rgb(190, 186, 186)
+}
+
+.container {
+    border: 1px solid white;
+    margin: auto;
+    margin-top: 200px;
+    text-align: center;
+    width: 50%;
+    height: 250px;
+    border-radius: 20px 20px;
+    box-shadow: 1px 1px 1px 1px gray;
+}
+
+.container-result {
+    float: left;
+    border: 1px solid white;
+    margin: auto;
+    margin-top: 200px;
+    margin-left: 50px;
+    text-align: center;
+    width: 40%;
+    height: 250px;
+    border-radius: 20px 20px;
+    box-shadow: 1px 1px 1px 1px gray;
+}
+
+.title {
+    color: rgb(13, 107, 230);
+}
+
+.prediction {
+    font-size: xx-large;
+}

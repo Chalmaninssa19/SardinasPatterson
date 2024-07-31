@@ -2,12 +2,14 @@
     $language = $_POST['language'];
     $output=null;
     $retval=null;
+    $output2=null;
+
     $command = 'python /var/www/html/sardinasPatterson/python/prediction.py "'.$language.'"';
     exec($command, $output, $retval);
     $val = $output[0];
     $command1 = 'python /var/www/html/sardinasPatterson/python/sardinas.py "'.$language.'"';
-    exec($command1, $output, $retval);
-    $valSardi = $output[0];
+    exec($command1, $output2, $retval);
+    $valSardi = $output2[0];
 ?>
 
 

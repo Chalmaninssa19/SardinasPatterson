@@ -50,9 +50,14 @@ def isListInListTwoDimension(list2D, list1D) :
 
 #Est ce que le langage est un code ou non
 def algoSardinasPatterson(langage) :
+    
+    if langage == None or len(langage) == 0 or '' in langage :
+        return False
+        
     M = []
     M.append(langage)
     count = 1
+        
     while True :
         quotientValue = quotient(langage, M[-1])
         if(count == 1) :
@@ -70,7 +75,7 @@ def algoSardinasPatterson(langage) :
 #original_tab = [1, 2, 2, 3, 4, 4, 5]
 #sans_doublon = list(set(original_tab))
 #print(sans_doublon)
-#'00000', '10000', '01000', '11000', '10110'
-#L = ['00000', '10000', '01000', '11000', '10110']
+
+#L = ['0', '01', '110', '1101', '1111']
 #isCode = algoSardinasPatterson(L)
 #print(isCode)
